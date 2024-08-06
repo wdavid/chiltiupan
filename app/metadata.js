@@ -1,13 +1,13 @@
 export const metadata = {
   title: 'Chiltiupán',
   description: 'Página sobre el municipio de Chiltiupán',
-  keywords: 'Chiltiupán, municipio, turismo, historia, cultura',
+  keywords: 'Chiltiupán, El Salvador, historia de Chiltiupán, patrimonio cultural, arquitectura colonial, festividades tradicionales, ecoturismo, paisajes naturales',
   author: 'Hdz Developer',
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   description: 'Página sobre el municipio de Chiltiupán',
   icons: {
-    icon: '/favicon.png',
+    icon: '/faviconT.png',
   },
   openGraph: {
     title: 'Chiltiupán',
