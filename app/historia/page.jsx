@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { FaInfoCircle } from 'react-icons/fa';
 
-export default function historia() {
+export default function Historia() {
   return (
     <section id="historia" className="py-12 px-6 mt-10 bg-background-primary text-white">
       <div className="max-w-7xl mx-auto text-center">
@@ -11,7 +11,7 @@ export default function historia() {
           Historia de Chiltiupán
         </h2>
         <p className="text-lg mb-6 text-gray-300">
-          Chiltiupán es un municipio ubicado en el departamento de La Libertad, en El Salvador. Su nombre se traduce del náhuat como "Templo rojo". Este municipio es conocido por su rica historia, su belleza natural y su patrimonio cultural.
+          Chiltiupán es un municipio ubicado en el departamento de La Libertad, en El Salvador. Su nombre se traduce del náhuat como &quot;Templo rojo&quot;. Este municipio es conocido por su rica historia, su belleza natural y su patrimonio cultural.
         </p>
         <p className="text-lg mb-6 text-gray-300">
           La región de Chiltiupán ha sido habitada desde tiempos precolombinos. Durante la época colonial, el área fue un importante centro de comercio y agricultura. La influencia de las culturas indígenas y la colonización española han dejado una marca profunda en la arquitectura y las tradiciones del lugar.
