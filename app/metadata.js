@@ -1,17 +1,16 @@
 export const metadata = {
   title: 'Chiltiupán',
   description: 'Chiltiupán, ubicado en el departamento de La Libertad en El Salvador, es un municipio lleno de historia, belleza natural y cultura vibrante. Conocido por su patrimonio colonial, sus festividades tradicionales y sus paisajes impresionantes, Chiltiupán ofrece una experiencia única para los visitantes. Explora nuestra rica herencia cultural, desde las antiguas iglesias y festivales locales hasta las montañas y senderos naturales que rodean el municipio. Aprende más sobre la historia y las maravillas de Chiltiupán en nuestro sitio web.',
-  keywords: 'Chiltiupán, El Salvador, historia de Chiltiupán, patrimonio colonial, cultura salvadoreña, festividades tradicionales, ecoturismo en Chiltiupán, paisajes de Chiltiupán',
+  keywords: 'Chiltiupán, El Salvador, historia de Chiltiupán, patrimonio colonial, cultura salvadoreña, festividades tradicionales, ecoturismo en Chiltiupán, paisajes de Chiltiupán, Templo Rojo',
   author: 'Hdz Developer',
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
-  description: 'Página sobre el municipio de Chiltiupán',
   icons: {
     icon: '/faviconT.png',
   },
   openGraph: {
     title: 'Chiltiupán',
-    description: 'Página sobre el municipio de Chiltiupán',
+    description: 'Chiltiupán, ubicado en el departamento de La Libertad en El Salvador, es un municipio lleno de historia, belleza natural y cultura vibrante. Conocido por su patrimonio colonial, sus festividades tradicionales y sus paisajes impresionantes, Chiltiupán ofrece una experiencia única para los visitantes. Explora nuestra rica herencia cultural, desde las antiguas iglesias y festivales locales hasta las montañas y senderos naturales que rodean el municipio. Aprende más sobre la historia y las maravillas de Chiltiupán en nuestro sitio web.',
     url: 'https://chiltiupan.vercel.app/',
     siteName: 'Chiltiupán',
     images: [
