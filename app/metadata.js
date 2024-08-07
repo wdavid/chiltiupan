@@ -6,7 +6,7 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.',
   },
   openGraph: {
     title: 'Chiltiupán',
@@ -15,7 +15,7 @@ export const metadata = {
     siteName: 'Chiltiupán',
     images: [
       {
-        url: 'https://scontent.fsal3-1.fna.fbcdn.net/v/t1.6435-9/88116066_3030218380428096_7576514844937945088_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=LQGYEE-3O18Q7kNvgFEFG1n&_nc_ht=scontent.fsal3-1.fna&oh=00_AYDQMFs5AOiOkqw2G6P1aKslbOTmvz64MMvScr96A4A7FQ&oe=66DA24E7',
+        url: 'https://scontent.fsal2-1.fna.fbcdn.net/v/t39.30808-6/326264703_856586898785023_2067681554492837458_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=qBnw5Wef2xAQ7kNvgF19IEB&_nc_ht=scontent.fsal2-1.fna&oh=00_AYA_u2eOdmsyvNdBPhpgqLfeJ2zOQnzwwNmtL7A0svqopw&oe=66B97C30',
         width: 1200,
         height: 630,
         alt: 'Imagen de Chiltiupán',
