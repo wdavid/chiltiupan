@@ -27,6 +27,7 @@ const config: Config = {
       },
       fontFamily: {
         'Lato': ['Lato', 'sans-serif'],
+        'Barlow': ['Barlow', 'sans-serif'],
       }
     },
   },

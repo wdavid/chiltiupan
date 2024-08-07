@@ -6,7 +6,7 @@ export const metadata = {
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   icons: {
-    icon: '/faviconT.png',
+    icon: '/favicon.svg',
   },
   openGraph: {
     title: 'Chiltiupán',

@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
         <meta property="og:type" content={metadata.openGraph.type} />
         <meta property="og:image" content={metadata.openGraph.images[0].url} />
       </head>
-      <body className='bg-background-primary font-Lato'>
+      <body className='bg-background-primary font-Barlow'>
         <Navbar />
         {children}
         <Footer />

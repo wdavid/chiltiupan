@@ -6,10 +6,10 @@ export default function Historia() {
   return (
     <section id="historia" className="py-12 px-6 mt-10 bg-background-primary text-white">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-6">
+        <div className="flex justify-center items-center mb-6 text-3xl">
           <FaInfoCircle className="inline-block text-accent mr-2" />
-          Historia de Chiltiupán
-        </h2>
+          <h2 className="text-3xl font-bold ">Historia de Chiltiupán</h2>
+        </div>
         <p className="text-lg mb-6 text-gray-300">
           Chiltiupán es un municipio ubicado en el departamento de La Libertad, en El Salvador. Su nombre se traduce del náhuat como &quot;Templo rojo&quot;. Este municipio es conocido por su rica historia, su belleza natural y su patrimonio cultural.
         </p>
@@ -22,14 +22,22 @@ export default function Historia() {
         <p className="text-lg mb-6 text-gray-300">
           Además de su riqueza histórica, Chiltiupán cuenta con una impresionante variedad de paisajes naturales. Desde sus montañas y colinas hasta sus áreas de cultivo y senderos naturales, el municipio ofrece oportunidades únicas para el ecoturismo y la exploración al aire libre.
         </p>
-        <div className="relative mb-6">
+        <div className="flex-row flex-wrap justify-center flex">
           <Image
             src="https://i.pinimg.com/originals/d4/b0/ed/d4b0ed961dfc72393c8edc6982f90474.jpg" // Cambia esta URL por una imagen representativa de Chiltiupán
             alt="Paisaje de Chiltiupán"
-            width={1200}
-            height={800}
-            layout="responsive"
-            className="rounded-md shadow-lg"
+            width={400}
+            height={100}
+            layout=""
+            className="rounded-md m-4"
+          />
+          <Image
+            src="https://scontent.fsal2-1.fna.fbcdn.net/v/t39.30808-6/236930066_4204506109602480_5433078731734485855_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=SeDx7Jxhqa8Q7kNvgFv28vh&_nc_ht=scontent.fsal2-1.fna&oh=00_AYCIlAaNYuJnL1OrLDoxmJMQ5dgBUl4f88JX4f3W97Uu-Q&oe=66B97A5A" // Cambia esta URL por una imagen representativa de Chiltiupán
+            alt="Paisaje de Chiltiupán"
+            width={500}
+            height={100}
+            layout=""
+            className="rounded-md m-4"
           />
         </div>
         <p className="text-lg text-gray-300">

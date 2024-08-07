@@ -5,7 +5,7 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-background-secondary text-white py-12">
+    <footer id="footer" className="bg-background-secondary text-white py-12">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6">
@@ -43,7 +43,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <MdOutlineLocationOn className="text-lg mr-2" />
-                <span className="hover:text-gray-400">Calle Principal, Chiltiupán, El Salvador</span>
+                <span className="hover:text-gray-400">Chiltiupán, La Libertad, El Salvador</span>
               </li>
             </ul>
           </div>

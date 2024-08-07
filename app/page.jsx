@@ -45,7 +45,7 @@ export default function Home() {
         <div className="relative z-10 text-center p-6">
           <div className="flex-col">
             <h1 className="text-4xl mb-1">Bienvenidos a</h1>
-            <h1 className="text-4xl mb-4 font-bold ml-2 text-accent">Chiltiupan</h1>
+            <h1 className="text-4xl mb-4 font-bold ml-2 text-accent">Chiltiupán</h1>
           </div>
           <p className="text-lg mb-4">Descubre la belleza y la cultura de nuestro querido municipio</p>
           <div className="flex-row flex-wrap justify-center flex">
@@ -66,11 +66,11 @@ export default function Home() {
 
       <section id="learn-more" className="py-12 px-6 bg-background-primary">
         <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center mb-5 justify-center">
+          <div className="flex items-center mb-5 justify-center mt-16">
             <h2 className="text-3xl font-bold text-white">Sobre</h2>
-            <h2 className="text-3xl font-bold ml-2 text-accent ">Chiltiupan</h2>
+            <h2 className="text-3xl font-bold ml-2 text-accent ">Chiltiupán</h2>
           </div>
-          <p className="text-lg mb-6 text-gray-300">Chiltiupan es un lugar lleno de encanto y tradición. Conocido por sus paisajes impresionantes, su rica historia y su vibrante cultura, nuestro municipio ofrece a los visitantes una experiencia única en cada visita. Desde las antiguas iglesias hasta las playas serenas y las montañas imponentes, cada rincón de Chiltiupan tiene algo especial que ofrecer.</p>
+          <p className="text-lg mb-6 text-gray-300">Chiltiupán es un lugar lleno de encanto y tradición. Conocido por sus paisajes impresionantes, su rica historia y su vibrante cultura, nuestro municipio ofrece a los visitantes una experiencia única en cada visita. Desde las antiguas iglesias hasta las playas serenas y las montañas imponentes, cada rincón de Chiltiupán tiene algo especial que ofrecer.</p>
           <div className="relative w-full h-60 overflow-hidden rounded-md shadow-lg mx-auto">
             <Image
               src="https://scontent.fsal3-1.fna.fbcdn.net/v/t1.6435-9/72777023_153519479377011_6042319511393140736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=oDm8Otdgp5AQ7kNvgHjpb7b&_nc_ht=scontent.fsal3-1.fna&oh=00_AYAxrbLysSyfXbGW3EDrCKoSQyn-S7VF09R-lRkX0NvD-Q&oe=66DA1140"
