@@ -8,6 +8,8 @@ const nextConfig = {
             "https://scontent.fsal2-2.fna.fbcdn.net",
             "scontent.fsal3-1.fna.fbcdn.net",
             "i.pinimg.com",
+            "example.com",
+            "www.todoturismo.sv",
         ]
     },
 };
