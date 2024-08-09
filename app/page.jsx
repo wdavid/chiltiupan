@@ -16,6 +16,19 @@ export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [weather, setWeather] = useState(null);
   const [error, setError] = useState(false);
+  const [currentTime, setCurrentTime] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const now = new Date();
+      const options = { hour: 'numeric', minute: 'numeric', hour12: true };
+      const formattedTime = new Intl.DateTimeFormat('es-ES', options).format(now);
+      setCurrentTime(formattedTime);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,8 +40,8 @@ export default function Home() {
   useEffect(() => {
     const fetchWeather = async () => {
       const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY; 
-      const lat = 13.4667; // Latitud de Chiltiupán
-      const lon = -89.3667; // Longitud de Chiltiupán
+      const lat = 13.5692408; // Latitud de Chiltiupán
+      const lon = -89.5426415; // Longitud de Chiltiupán
       const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&lang=es&units=metric`;
 
       try {
@@ -91,7 +104,14 @@ export default function Home() {
             <h1 className="text-4xl mb-1">Bienvenidos a</h1>
             <h1 className="text-4xl mb-2 font-bold ml-2 text-accent">Chiltiupán</h1>
           </div>
-          <p className="text-lg mb-4">Descubre la belleza y la cultura de nuestro querido municipio</p>
+          {currentTime ? (
+            <div className="text-2xl font-medium">
+              {currentTime}
+            </div>
+          ) : (
+            <div>Cargando...</div>
+          )}
+          <p className="text-lg mb-4">Descubre la belleza y la cultura de nuestro querido distrito.</p>
           <div className="flex-row flex-wrap justify-center flex">
             <FaChurch className="text-5xl text-white mx-3" />
             <FaUmbrellaBeach className="text-5xl text-white mx-3" />
@@ -109,19 +129,19 @@ export default function Home() {
 
       <section id="learn-more" className="py-12 px-6 bg-white dark:bg-background-primary">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
             <div className="md:col-span-2 mb-2">
               <div className="flex items-center mb-5 justify-center">
                 <h2 className="text-3xl font-bold text-black dark:text-white">Sobre</h2>
                 <h2 className="text-3xl font-bold ml-2 text-accent">Chiltiupán</h2>
               </div>
               <p className="text-lg mb-6 text-black dark:text-gray-300">
-                Chiltiupán es un lugar lleno de encanto y tradición. Conocido por sus paisajes impresionantes, su rica historia y su vibrante cultura, nuestro municipio ofrece a los visitantes una experiencia única en cada visita. Desde las antiguas iglesias hasta las playas serenas y las montañas imponentes, cada rincón de Chiltiupán tiene algo especial que ofrecer.
+                Chiltiupán es un lugar lleno de encanto y tradición. Conocido por sus paisajes impresionantes, su rica historia y su vibrante cultura, nuestro distrito ofrece a los visitantes una experiencia única en cada visita. Desde las antiguas iglesias hasta las playas serenas y las montañas imponentes, cada rincón de Chiltiupán tiene algo especial que ofrecer.
               </p>
               <p className="text-lg mb-6 text-black dark:text-gray-300">
-                El municipio está compuesto por una rica variedad de comunidades, organizadas en cantones y caseríos que reflejan la diversidad y el encanto local. Entre estos se encuentran Julupe, Siberia Norte, Siberia Sur, El Zonte, Shutia, Las Flores, Santa Marta, Santa Lucía, Termópilas, Cuervo Abajo y Cuervo Arriba. En total, el municipio cuenta con 16 comunidades, cada una con su propio carácter y atractivos únicos. Desde las serenas playas de El Zonte hasta los hermosos paisajes en Santa Marta, cada comunidad ofrece oportunidades especiales para el turismo y la exploración. Estas localidades no solo son el corazón de la vida local, sino también destinos ideales para quienes desean conocer la auténtica esencia del municipio y disfrutar de su diversidad cultural y natural.
+                El distrito de Chiltiupán está compuesto por una rica variedad de comunidades, organizadas en cantones y caseríos que reflejan la diversidad y el encanto local. Entre estos se encuentran Julupe, Siberia Norte, Siberia Sur, El Zonte, Shutia, Las Flores, Santa Marta, Santa Lucía, Termópilas, Cuervo Abajo y Cuervo Arriba. En total, el distrito cuenta con 16 comunidades, cada una con su propio carácter y atractivos únicos. Desde las serenas playas de El Zonte hasta los hermosos paisajes en Santa Marta, cada comunidad ofrece oportunidades especiales para el turismo y la exploración. Estas localidades no solo son el corazón de la vida local, sino también destinos ideales para quienes desean conocer la auténtica esencia del distrito y disfrutar de su diversidad cultural y natural.
               </p>
-              <div className="relative w-full h-60 overflow-hidden rounded-md shadow-lg mx-auto">
+              <div className="relative w-full mb-2 h-60 overflow-hidden rounded-md shadow-lg mx-auto">
                 <Image
                   src="https://scontent.fsal3-1.fna.fbcdn.net/v/t1.6435-9/72777023_153519479377011_6042319511393140736_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=oDm8Otdgp5AQ7kNvgHjpb7b&_nc_ht=scontent.fsal3-1.fna&oh=00_AYAxrbLysSyfXbGW3EDrCKoSQyn-S7VF09R-lRkX0NvD-Q&oe=66DA1140"
                   alt="About Chiltiupan"
@@ -130,18 +150,20 @@ export default function Home() {
                   className="absolute inset-0"
                 />
               </div>
+              <a href="https://www.facebook.com/photo/?fbid=153519476043678&set=a.118374392891520" className="underline text-sky-700 dark:text-sky-500">Fotografía de Chiltiupán Pictures</a>
               <div className="flex justify-center">
                 <a href="/historia" className="mt-2 inline-block bg-secondary underline text-black dark:text-white py-3 rounded-md text-lg font-medium">Historia de Chiltiupán...</a>
               </div>
             </div>
-            <div className="px-6 pb-6 border-l-2 border-gray-200 dark:border-gray-700 text-black dark:text-white">
+            <div className="sm:px-6 sm:pb-6 sm:border-l-2 border-gray-200 dark:border-gray-700 text-black dark:text-white">
               <div className="p-4 bg-sky-100 dark:bg-gray-800 rounded-md shadow-lg">
                 <h3 className="text-xl font-medium mb-4 text-center">Información Adicional</h3>
                 <ul className="pl-3">
+                <li><strong className="font-medium mr-1">Municipio:</strong>La Libertad Costa</li>
+                  <li><strong className="font-medium mr-1">Departamento:</strong>La Libertad</li>
                   <li><strong className="font-medium mr-1">Superficie:</strong>96.66 km²</li>
                   <li><strong className="font-medium mr-1">Número de Habitantes:</strong>{`11 796 hab. (2013)`}</li>
                   <li><strong className="font-medium mr-1">Comunidades:</strong>16</li>
-                  <li><strong className="font-medium mr-1">Principales Atractivos:</strong> Playas, montañas, sitios históricos</li>
                   <li><strong className="font-medium mr-1">Gentilicio:</strong>Chiltiupanecos</li>
                 </ul>
               </div>

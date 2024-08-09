@@ -7,7 +7,7 @@ const attractions = [
   {
     name: 'Playa el Zonte',
     slug: 'playa-el-zonte',
-    description: 'Una de las playas mas visitadas en el municipio de Chiltiupán, con un ambiente relajado y olas consistentes para surfear.',
+    description: 'Una de las playas mas visitadas en el distrito de Chiltiupán, con un ambiente relajado y olas consistentes para surfear.',
     image: 'https://www.todoturismo.sv/custom/domain_1/image_files/sitemgr_photo_4111.jpg', // URL de la imagen
   },
   {
@@ -40,7 +40,7 @@ export default function Atracciones() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {attractions.map((attraction, index) => (
             <Link href={`/atracciones/${attraction.slug}`} key={index} passHref>
-              <div className="cursor-pointer bg-light-secondary dark:bg-background-secondary rounded-lg shadow-lg overflow-hidden">
+              <div className="cursor-pointer bg-light-secondary dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
                 <div className="relative h-48">
                   <Image
                     src={attraction.image}

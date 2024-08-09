@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6">
             <h2 className="text-2xl font-bold mb-4">Chiltiupán</h2>
-            <p className="text-lg mb-4">Descubre la belleza y cultura de nuestro querido municipio. Visítanos y conoce más sobre nuestra historia, atracciones y cultura.</p>
+            <p className="text-lg mb-4">Descubre la belleza y cultura de nuestro querido Chiltiupán. Visítanos y conoce más sobre nuestra historia, atracciones y cultura.</p>
             <div className="flex space-x-4">
               <a href="https://facebook.com" className="text-white hover:text-gray-400">
                 <FaFacebookF className="text-xl" />
