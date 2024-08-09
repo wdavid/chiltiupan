@@ -10,12 +10,12 @@ const attractions = {
   'playa-el-zonte': {
     name: 'Playa el Zonte',
     description: 'Ubicada en la costa de La Libertad, Playa El Zonte es una playa pintoresca famosa por sus olas consistentes y su ambiente relajado. Es un destino popular entre los surfistas debido a sus excelentes condiciones para el surf durante todo el año. La playa ofrece una combinación de arena dorada y rocas volcánicas, creando un paisaje único y atractivo. El área alrededor de Playa El Zonte cuenta con una variedad de pequeños restaurantes y bares que ofrecen comida local y refrescos, lo que permite a los visitantes disfrutar de una comida con vista al mar. Además, la playa está rodeada de vegetación tropical, lo que agrega un toque natural y fresco al entorno. Es un lugar ideal para quienes buscan escapar del bullicio de las ciudades y disfrutar de una experiencia costera tranquila y auténtica. La comunidad local, amigable y acogedora, contribuye a que la atmósfera de Playa El Zonte sea relajada y agradable.',
-    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.4943911,-89.4425843&key=${apiKey}`,
+    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.494494,-89.440107&key=${apiKey}`,
   },
   'parque-de-diversiones': {
     name: 'Parque de Diversiones',
     description: 'Este parque está ubicado junto a la alcaldía municipal de chiltiupan, es un lugar ideal para pasar un rato agradable en familia en un ambiente tranquilo y seguro.',
-    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.59094,-89.46721&key=${apiKey}`,
+    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.590728,-89.467295&key=${apiKey}`,
   },
   'atraccion-3': {
     name: 'Atracción 3',
