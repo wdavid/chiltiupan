@@ -98,11 +98,19 @@ export default function Home() {
             />
           </div>
         ))}
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 text-center p-6">
           <div className="flex-col">
-            <h1 className="text-4xl mb-1">Bienvenidos a</h1>
-            <h1 className="text-4xl mb-2 font-bold ml-2 text-accent">Chiltiupán</h1>
+            {/* <h1 className="text-4xl mb-1">Bienvenidos a</h1>
+            <h1 className="text-4xl mb-2 font-bold ml-2 text-accent">Chiltiupán</h1> */}
+            <Image
+              src="/logoconocechiltiuwhite.png"
+              alt="Logo de Conoce Chiltiupán"
+              width={300}
+              height={100}
+              quality={100}
+              className="mx-auto"
+            />
           </div>
           {currentTime ? (
             <div className="text-2xl font-medium">
@@ -112,15 +120,15 @@ export default function Home() {
             <div>Cargando...</div>
           )}
           <p className="text-lg mb-4">Descubre la belleza y la cultura de nuestro querido distrito.</p>
-          <div className="flex-row flex-wrap justify-center flex">
-            <FaChurch className="text-5xl text-white mx-3" />
-            <FaUmbrellaBeach className="text-5xl text-white mx-3" />
-            <FaMountainSun className="text-5xl text-white mx-3" />
-            <GiWaveSurfer className="text-5xl text-white mx-3" />
+          <div className="flex-row flex-wrap justify-center flex text-white">
+            <FaChurch className="text-5xl mx-3" />
+            <FaUmbrellaBeach className="text-5xl mx-3" />
+            <FaMountainSun className="text-5xl mx-3" />
+            <GiWaveSurfer className="text-5xl mx-3" />
           </div>
           <div className="flex flex-col items-center justify-center mt-5">
-            <a href="#learn-more" className="bg-primary text-white px-6 mt-5 rounded-md text-lg font-medium">Conoce Más</a>
-            <a href="#learn-more" className="text-4xl mt-2 text-white animate-bounce">
+            <a href="#learn-more" className="bg-primary text-green-100 px-6 mt-5 rounded-md text-lg font-medium">Conoce Más</a>
+            <a href="#learn-more" className="text-4xl mt-2 text-green-100 animate-bounce">
               <FaChevronDown />
             </a>
           </div>
@@ -133,7 +141,7 @@ export default function Home() {
             <div className="md:col-span-2 mb-2">
               <div className="flex items-center mb-5 justify-center">
                 <h2 className="text-3xl font-bold text-black dark:text-white">Sobre</h2>
-                <h2 className="text-3xl font-bold ml-2 text-accent">Chiltiupán</h2>
+                <h2 className="text-3xl font-bold ml-2 text-text-light dark:text-accent">Chiltiupán</h2>
               </div>
               <p className="text-lg mb-6 text-black dark:text-gray-300">
                 Chiltiupán es un lugar lleno de encanto y tradición. Conocido por sus paisajes impresionantes, su rica historia y su vibrante cultura, nuestro distrito ofrece a los visitantes una experiencia única en cada visita. Desde las antiguas iglesias hasta las playas serenas y las montañas imponentes, cada rincón de Chiltiupán tiene algo especial que ofrecer.
@@ -156,7 +164,7 @@ export default function Home() {
               </div>
             </div>
             <div className="sm:px-6 sm:pb-6 sm:border-l-2 border-gray-200 dark:border-gray-700 text-black dark:text-white">
-              <div className="p-4 bg-sky-100 dark:bg-gray-800 rounded-md shadow-lg">
+              <div className="p-4 bg-green-50 dark:bg-gray-900 rounded-md shadow-lg">
                 <h3 className="text-xl font-medium mb-4 text-center">Información Adicional</h3>
                 <ul className="pl-3">
                 <li><strong className="font-medium mr-1">Municipio:</strong>La Libertad Costa</li>
@@ -173,7 +181,7 @@ export default function Home() {
                   <p className="text-center text-red-600 dark:text-white">Hubo un problema al intentar cargar los datos del clima. Por favor, inténtalo de nuevo más tarde.</p>
                 </div>
               ) : weather ? (
-                <div className="mt-6 p-4 bg-yellow-50 dark:bg-gray-800 rounded-md shadow-lg">
+                <div className="mt-6 p-4 bg-purple-50 dark:bg-gray-900 rounded-md shadow-lg">
                   <h3 className="text-xl font-medium mb-2 text-center">Clima actual en Chiltiupán</h3>
                   <div className="pl-3 text-5xl flex items-center justify-center">
                     {getWeatherIcon(weather.weather[0].main)}
@@ -186,7 +194,7 @@ export default function Home() {
                   </ul>
                 </div>
               ) : (
-                <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800 rounded-md shadow-lg">
+                <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-900 rounded-md shadow-lg">
                   <h3 className="text-xl font-medium mb-2 text-center">Cargando información del clima...</h3>
                 </div>
               )}

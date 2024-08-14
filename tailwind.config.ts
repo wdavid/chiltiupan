@@ -11,14 +11,16 @@ const config: Config = {
     extend: {
       colors: {
         background: {
-          primary: '#030712', 
-          secondary: '#021238', 
+          primary: '#000000', 
+          secondary: '#10002B', 
+          hover: '#216339',
         },
         light: {
-          secondary: '#e0f2fe  ', 
+          secondary: '#FFFFFF', 
         },
-        accent: '#feae01',
+        accent: '#4ade80',
         text: {
+          light: '#2d864d',
           primary: '#fcfcfb',
           secondary: '#a3a3a3',
         },

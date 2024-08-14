@@ -6,33 +6,47 @@ import { IoMdArrowBack } from "react-icons/io";
 
 const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
-const attractions = {
-  'playa-el-zonte': {
+const attractions = [
+  {
     name: 'Playa el Zonte',
-    description: 'Ubicada en la costa de La Libertad, Playa El Zonte es una playa pintoresca famosa por sus olas consistentes y su ambiente relajado. Es un destino popular entre los surfistas debido a sus excelentes condiciones para el surf durante todo el año. La playa ofrece una combinación de arena dorada y rocas volcánicas, creando un paisaje único y atractivo. El área alrededor de Playa El Zonte cuenta con una variedad de pequeños restaurantes y bares que ofrecen comida local y refrescos, lo que permite a los visitantes disfrutar de una comida con vista al mar. Además, la playa está rodeada de vegetación tropical, lo que agrega un toque natural y fresco al entorno. Es un lugar ideal para quienes buscan escapar del bullicio de las ciudades y disfrutar de una experiencia costera tranquila y auténtica. La comunidad local, amigable y acogedora, contribuye a que la atmósfera de Playa El Zonte sea relajada y agradable.',
-    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.494494,-89.440107&key=${apiKey}&maptype=satellite`,
+    slug: 'playa-el-zonte',
+    description: 'Una de las playas mas visitadas en el distrito de Chiltiupán, con un ambiente relajado y olas consistentes para surfear.',
+    image: 'https://www.todoturismo.sv/custom/domain_1/image_files/sitemgr_photo_4111.jpg',
+    lat: 13.494494,
+    lon: -89.440107,
   },
-  'parque-de-diversiones': {
+  {
     name: 'Parque de Diversiones',
-    description: 'Este parque está ubicado junto a la alcaldía de chiltiupan, es un lugar ideal para pasar un rato agradable en familia en un ambiente tranquilo y seguro.',
-    iframeSrc: `https://www.google.com/maps/embed/v1/place?q=13.590728,-89.467295&key=${apiKey}&maptype=satellite`,
+    slug: 'parque-de-diversiones',
+    description: 'Un lugar ideal para pasar un rato agradable en familia en un ambiente tranquilo y seguro.',
+    image: 'https://scontent.fsal3-1.fna.fbcdn.net/v/t1.6435-9/88116066_3030218380428096_7576514844937945088_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7b2446&_nc_ohc=XrO2JiMDFF4Q7kNvgFjD1iC&_nc_ht=scontent.fsal3-1.fna&oh=00_AYA7X5QNxZzx_zlYK6KT3mdlfj509UYBUtBaYgtS7Vj12w&oe=66DCC7E7',
+    lat: 13.590728,
+    lon: -89.467295,
   },
-  'atraccion-3': {
+  {
     name: 'Atracción 3',
+    slug: 'atraccion-3',
     description: 'loremp ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc nec urna tincidunt luctus.',
-    iframeSrc: 'https://maps.google.com/?q=13.488,89.366',
+    image: '',
+    lat: 13.488,
+    lon: -89.366,
   },
-  'atraccion-4': {
+  {
     name: 'Atracción 4',
-    description: 'loremp ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc nec urna tincidunt luctus.',
-    iframeSrc: 'https://maps.google.com/?q=13.488,89.366',
+    slug: 'atraccion-4',
+    description: 'lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac nunc nec urna tincidunt luctus.',
+    image: '', 
+    lat: 13.488,
+    lon: -89.366,
   },
-};
+];
 
 export default function AtraccionDetail() {
   const router = useRouter();
   const { slug } = useParams();
-  const attraction = attractions[slug];
+
+  // Buscar la atracción que tenga el slug coincidente
+  const attraction = attractions.find(attraction => attraction.slug === slug);
 
   if (!attraction) {
     return (
@@ -69,7 +83,7 @@ export default function AtraccionDetail() {
             <p className="text-lg mb-6">{attraction.description}</p>
             <div className="w-full h-80 mt-6">
               <iframe
-                src={attraction.iframeSrc}
+                src={`https://www.google.com/maps/embed/v1/place?q=${attraction.lat},${attraction.lon}&key=${apiKey}&maptype=satellite`}
                 width="100%"
                 height="100%"
                 frameBorder="0"
@@ -85,4 +99,3 @@ export default function AtraccionDetail() {
     </div>
   );
 }
-

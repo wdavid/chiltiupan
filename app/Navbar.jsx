@@ -38,7 +38,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-background-secondary border-b border-border fixed w-full top-0 left-0 z-50">
+    <nav className="bg-background-secondary border-b border-green-300 fixed w-full top-0 left-0 z-50">
       <div className=" mx-auto sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="absolute inset-y-0 left-2 flex items-center sm:hidden">
@@ -75,15 +75,15 @@ export default function Navbar() {
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0">
               <Link href="/">
-                <img className="w-28" src="/logowhite.png" alt="Workflow" />
+                <img className="h-9" src="/logoconocechiltiuwhite.png" alt="Workflow" />
               </Link>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <Link href="/" className={`text-gray-300 flex items-center hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}><IoHomeOutline className="mr-1"/> Inicio</Link>
-                <Link href="/historia" className={`text-gray-300 flex items-center hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/historia' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}><MdOutlineHistoryEdu className="mr-1 text-xl"/> Historia</Link>
-                <Link href="/atracciones" className={`text-gray-300 flex items-center hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/atracciones' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}><BiLandscape className="mr-1 text-xl"/>Atracciones</Link>
-                <Link href="/cultura" className={`text-gray-300 flex items-center hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/cultura' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}><GiStoneTower className="mr-1"/>Cultura</Link>
+                <Link href="/" className={`text-gray-300 flex items-center hover:bg-background-hover hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}><IoHomeOutline className="mr-1"/> Inicio</Link>
+                <Link href="/historia" className={`text-gray-300 flex items-center hover:bg-background-hover hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/historia' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}><MdOutlineHistoryEdu className="mr-1 text-xl"/> Historia</Link>
+                <Link href="/atracciones" className={`text-gray-300 flex items-center hover:bg-background-hover hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/atracciones' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}><BiLandscape className="mr-1 text-xl"/>Atracciones</Link>
+                <Link href="/cultura" className={`text-gray-300 flex items-center hover:bg-background-hover hover:text-white px-3 py-2 rounded-md text-sm font-medium ${pathname === '/cultura' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}><GiStoneTower className="mr-1"/>Cultura</Link>
               </div>
             </div>
           </div>
@@ -113,10 +113,10 @@ export default function Navbar() {
 
       <div className={`sm:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 ">
-          <Link href="/" className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}>Inicio</Link>
-          <Link href="/historia" className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/historia' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}>Historia</Link>
-          <Link href="/atracciones" className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/atracciones' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}>Atracciones</Link>
-          <Link href="/cultura" className={`text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/cultura' ? 'bg-gray-700 text-white' : ''}`} onClick={closeMobileMenu}>Cultura</Link>
+          <Link href="/" className={`text-gray-300 hover:bg-background-hover hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}>Inicio</Link>
+          <Link href="/historia" className={`text-gray-300 hover:bg-background-hover hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/historia' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}>Historia</Link>
+          <Link href="/atracciones" className={`text-gray-300 hover:bg-background-hover hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/atracciones' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}>Atracciones</Link>
+          <Link href="/cultura" className={`text-gray-300 hover:bg-background-hover hover:text-white block px-3 py-2 rounded-md text-base font-medium ${pathname === '/cultura' ? 'bg-background-hover text-white' : ''}`} onClick={closeMobileMenu}>Cultura</Link>
         </div>
       </div>
     </nav>

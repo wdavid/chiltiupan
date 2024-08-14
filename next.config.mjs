@@ -10,6 +10,7 @@ const nextConfig = {
             "i.pinimg.com",
             "example.com",
             "www.todoturismo.sv",
+            "scontent.fsal11-1.fna.fbcdn.net",
         ]
     },
 };
