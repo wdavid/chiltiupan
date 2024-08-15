@@ -101,16 +101,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-black opacity-60"></div>
         <div className="relative z-10 text-center p-6">
           <div className="flex-col">
-            {/* <h1 className="text-4xl mb-1">Bienvenidos a</h1>
-            <h1 className="text-4xl mb-2 font-bold ml-2 text-accent">Chiltiupán</h1> */}
-            <Image
+            <h1 className="text-4xl mb-1">Bienvenidos a</h1>
+            <h1 className="text-4xl mb-2 font-bold ml-2 text-accent">Chiltiupán</h1>
+            {/* <Image
               src="/logoconocechiltiuwhite.png"
               alt="Logo de Conoce Chiltiupán"
               width={300}
               height={100}
               quality={100}
               className="mx-auto"
-            />
+            /> */}
           </div>
           {currentTime ? (
             <div className="text-2xl font-medium">
