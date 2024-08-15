@@ -15,7 +15,7 @@ export const metadata = {
     siteName: 'Chiltiupán',
     images: [
       {
-        url: 'https://res.cloudinary.com/de7djy2va/image/upload/v1723680647/Attractions/logoconocechiltiublack.png.png',
+        url: 'https://res.cloudinary.com/de7djy2va/image/upload/v1723681305/Attractions/logobackground.jpg.jpg',
         width: 1200,
         height: 630,
         alt: 'Imagen de Chiltiupán',
