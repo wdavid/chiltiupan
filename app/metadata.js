@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Chiltiupán',
     description: 'Chiltiupán, ubicado en el departamento de La Libertad en El Salvador, es un municipio lleno de historia, belleza natural y cultura vibrante. Conocido por su patrimonio colonial, sus festividades tradicionales y sus paisajes impresionantes, Chiltiupán ofrece una experiencia única para los visitantes. Explora nuestra rica herencia cultural, desde las antiguas iglesias y festivales locales hasta las montañas y senderos naturales que rodean el municipio. Aprende más sobre la historia y las maravillas de Chiltiupán en nuestro sitio web.',
-    url: 'https://chiltiupan.vercel.app/',
+    url: 'https://conocechilti.vercel.app/',
     siteName: 'Chiltiupán',
     images: [
       {
